@@ -1,0 +1,5 @@
+class AwsOcket {    
+    boolean exists() { /* ... */ }    
+    void read(final OutputStream output) { /* ... */ }    
+    void write(final InputStream input) { /* ... */ }
+}

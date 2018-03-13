@@ -1,0 +1,16 @@
+* Building a gateway in every service
+* API Versioning Avoidance
+* Manual Configurations Management
+* Layered Services Architecture
+	- One common mistake people made with SOA were misunderstanding how to achieve the re-usability of services. Teams mostly focused on technical cohesion rather than functional regarding reusability.
+* Cohesion Chaos
+* Schemas everywhere
+* Spiky Load between Services
+	- ou often get spiky traffic between services, and a common solution is to amortise the load by using queues between the services.
+* Hardcoded IPs and Ports
+* Dogpiles
+	- If one of your services is under load or malfunctioning, and all your other services keep retrying their failed calls, then the problem would be compounded and magnified by the additional load from these retries.
+* Debugging Hell
+	- solution is to use correlation IDs (Zipkin/Sleuth)
+* Flying Blind
+	- With a micro-service architecture the need for on-going operational metrics is greater than ever before, without them you are just flying blind.
